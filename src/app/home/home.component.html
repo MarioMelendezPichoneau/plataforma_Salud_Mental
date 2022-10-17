@@ -1,1 +1,289 @@
-<p>home works Javier!</p>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92" crossorigin="anonymous">
+
+    <title>MindSecure</title>
+</head>
+<body>
+
+  <header>
+    <!-- Comienzo de la pagina -->
+    <div class="header-content">
+      <h2>Tu salud es nuestra prioridad</h2>
+      <div class="line"></div>
+      <h1>TU PUEDES SUPERARLO</h1>
+      <a href="#" class="ctn">Más Información</a>
+    </div>
+  </header>
+
+
+  <!-- Descripcion servicios -->
+  <section class="eventos">
+    <div class="title">
+      <h1>Nuestros servcios</h1>
+      <div class="line"></div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <img src="\assets\photo1.jpg" alt="" width="300px" height="300px">
+        <h4>Consulta profesional</h4>
+        <p>Te ofrecemos servicios de consultas a profesionales dedicados al area de la salud mental, tenemos profesionales de todo el mundo.
+          asi puedes ver el horario del profesional y contactarte con el. </p>
+        </div>
+        <div class="col">
+          <img src="\assets\chatting.png" alt="fondo" width="300px" height="300px">
+          <h4>Chat automatico</h4>
+          <p>Como paciente puedes chatear con un bot para hacerle preguntas que son frecuentes,
+            tambien tienes la opcion de tener una conversacion en chat con un profesional de la salud mental que este disponible en el momento.</p>
+          </div>
+          <div class="col">
+            <img src="\assets\group.jpg" alt="" width="300px" height="300px">
+            <h4>Grupo de apoyo</h4>
+            <p>Unete a grupos de apoyos en el que intercambiarás opiniones con otras personas sobre diversos temas,
+              que esten relacionados con lo que estas pasando y con un profesional a cargo para que todo fluya de forma efectiva.</p><br>
+            </div>
+    </div>
+
+  </section>
+
+  <section class="carousel container">
+      <!-- Carrousel -->
+      <app-carousel [images]="images" [autoSlide]="true"></app-carousel>
+    
+    </section>
+
+  <!-- Preguntas frecuentes -->
+
+  <section class="questions">
+
+    <h2>Preguntas frecuentes</h2><br><br>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false">
+          <span class="accordion-title">¿Cuales son las ventajas en comparacion de las consultas fisicas?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicinbhng elit.Poner respuestas. </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button id="accordion-button-2" aria-expanded="false">
+          <span class="accordion-title">¿Que tipo de sesiones ofrece la plataforma para las consultas?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p>Las consultas que se ofrecen pueden ser familiares, personales o laborales. </p>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <button id="accordion-button-3" aria-expanded="false">
+          <span class="accordion-title">¿Como usuario tendria el acceso a diferentes sesiones?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <button id="accordion-button-4" aria-expanded="false">
+          <span class="accordion-title">¿Cuanto dura una sesion?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button id="accordion-button-4" aria-expanded="false">
+          <span class="accordion-title">¿Cuantas sesiones voy a necesitar?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button id="accordion-button-4" aria-expanded="false">
+          <span class="accordion-title">¿Qué pasa si no me siento cómodo con el terapeuta?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Equipo de trabajo -->
+<section id="team" class="team">
+<div class="container">
+
+  <div class="section-title" data-aos="fade-up">
+    <h2>Equipo</h2><br>
+    <p>Este es nuestro equipo de trabajo</p>
+  </div><br><br><br>
+
+  <div class="row">
+
+    <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+      <div class="member">
+        <img src="\assets\mario.jpeg" class="img-fluid" alt="">
+        <div class="member-info">
+          <div class="member-info-content">
+            <h4>Mario Melendez</h4>
+            <span>Back-end dev</span>
+          </div>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+      <div class="member">
+        <img src="\assets\javier.jpeg" class="img-fluid" alt="">
+        <div class="member-info">
+          <div class="member-info-content">
+            <h4>Javier Aquino</h4>
+            <span>Full-stack dev</span>
+          </div>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+      <div class="member">
+        <img src="\assets\shayen.jpeg" class="img-fluid" alt=""  width="300px" height="300px">
+        <div class="member-info">
+          <div class="member-info-content">
+            <h4>Shayen Arno</h4>
+            <span>Front-end dev</span>
+          </div>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+<!-- Footer con input  -->
+<footer id="footer">
+
+<div class="footer-newsletter">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <h4>Animate a mandarnos un correo</h4>
+        <p>Mandanos tus preguntas</p>
+        <form action="" method="post">
+          <input type="email" name="email"><input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-top">
+  <div class="container">
+    <div class="row">
+
+      <!-- Footer con informaciones -->
+      <div class="col-lg-3 col-md-6 footer-contact">
+        <h3>MindSecure</h3><br>
+        <p>
+          Avenida Tiradentes <br>
+          Santo Domingo, 535022<br>
+          Republica Dominicana <br><br>
+          <strong>Phone:</strong> <br>+1 5589 55488 55<br>
+          <strong>Email:</strong> MindSecure@gmail.com<br>
+        </p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Links principales</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Nuestros servicios</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Contactanos</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Terminos de servicio</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Nuestros servicios</h4>
+        <ul>
+          <li><i class="bx bx-chevron-right"></i> <a href="#"></a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+          <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 footer-links">
+        <h4>Nuestras redes sociales</h4>
+        <p>Unetenos a traves de todas nuestras redes sociales</p>
+        <div class="social-links mt-3">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer copyright -->
+<div class="container py-4">
+  <div class="copyright">
+    &copy; Copyright <strong><span>MindSecure</span></strong>. Todos los derechos reservados
+  </div>
+</div>
+</footer>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" ></script>
+
+</body>
+</html>

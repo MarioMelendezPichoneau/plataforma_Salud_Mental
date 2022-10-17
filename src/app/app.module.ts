@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 const appRoutes: Routes=[
   {path:"",component:HomeComponent},
+  {path:"Carrousel",component:CarouselComponent},
   {path:"Login",component:LoginComponent}
 
 ];
@@ -22,7 +23,6 @@ const appRoutes: Routes=[
     HomeComponent,
     LoginComponent,
     NavbarComponent,
-    //CarouselComponent
   ],
   imports: [
     BrowserModule,
