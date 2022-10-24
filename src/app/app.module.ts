@@ -9,11 +9,13 @@ import { CarouselModule } from './carousel/carousel.module';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RegistroComponent } from './user/registro/registro.component';
 
 const appRoutes: Routes=[
   {path:"",component:HomeComponent},
   {path:"Carrousel",component:CarouselComponent},
-  {path:"Login",component:LoginComponent}
+  {path:"Login",component:LoginComponent},
+  {path:"Registro",component:RegistroComponent}
 
 ];
 
@@ -23,6 +25,7 @@ const appRoutes: Routes=[
     HomeComponent,
     LoginComponent,
     NavbarComponent,
+    RegistroComponent,
   ],
   imports: [
     BrowserModule,
