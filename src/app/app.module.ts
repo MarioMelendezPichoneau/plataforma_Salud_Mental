@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import {HttpClientModule}from '@angular/common/http'
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -10,12 +12,17 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegistroComponent } from './user/registro/registro.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { HomeInsideComponent } from './home-inside/home-inside.component';
 
 const appRoutes: Routes=[
   {path:"",component:HomeComponent},
   {path:"Carrousel",component:CarouselComponent},
   {path:"Login",component:LoginComponent},
-  {path:"Registro",component:RegistroComponent}
+  {path:"Registro",component:RegistroComponent},
+  {path:"HomeInside",component:HomeInsideComponent},
+  {path:"sidebar",component:SidebarComponent}
+
 
 ];
 
@@ -26,12 +33,18 @@ const appRoutes: Routes=[
     LoginComponent,
     NavbarComponent,
     RegistroComponent,
+    SidebarComponent,
+    HomeInsideComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    RouterModule.forRoot(appRoutes)
+    ReactiveFormsModule,
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,102 @@
+body{
+    background: #eee;
+}
+
+#side_nav{
+    background: rgb(31, 30, 30);
+    min-width: 250px;
+    max-width: 250px;
+}
+.content{
+    min-height: 100vh;
+    width: 100%;
+}
+hr .h-color{
+    background: #eee;
+}
+
+.sidebar li.active{
+    background: #eee;
+    border-radius: 8px;
+}
+
+.sidebar li.active a, .sidebar li.active a:hover {
+    color: #000;
+}
+
+.sidebar li a{
+    color: #fff;
+}
+
+.dashboard-content p{
+    padding-top: 10px;
+    font-size:20px;
+    text-align: center;
+}
+
+.dashboard-content2 h1{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(55, 55, 157);
+}
+
+.dashboard-content2 ul li{
+    padding-top: 10px;
+    font-size:20px;
+    color: #7c7c7c;
+}
+
+.eventos{
+    margin-left: 200px;
+}
+
+.dashboard-content h1{
+    padding-top: 10px;
+    margin-left: 40px;
+    text-align: center;
+
+}
+
+.title{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(55, 55, 157);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eventos .row{
+    margin-top: 50px;
+}
+
+
+.eventos .row .col p{
+    text-align: justify;
+}
+h4{
+    font-size: 3vmin;
+    color: #484872;
+    margin: 20px auto;
+}
+
+p{
+    color: #7c7c7c;
+    padding: 0px 40px;
+}
+
+.eventos .ctn{
+    margin-top: 30px;
+}
