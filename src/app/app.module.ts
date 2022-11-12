@@ -14,12 +14,14 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RegistroComponent } from './user/registro/registro.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeInsideComponent } from './home-inside/home-inside.component';
+import { ChatComponent } from './chat/chat.component';
 
 const appRoutes: Routes=[
   {path:"",component:HomeComponent},
   {path:"Carrousel",component:CarouselComponent},
   {path:"Login",component:LoginComponent},
   {path:"Registro",component:RegistroComponent},
+  {path: "chat", component: ChatComponent },
   {path:"HomeInside",component:HomeInsideComponent},
   {path:"sidebar",component:SidebarComponent}
 
@@ -35,6 +37,7 @@ const appRoutes: Routes=[
     RegistroComponent,
     SidebarComponent,
     HomeInsideComponent,
+    ChatComponent,
 
   ],
   imports: [
