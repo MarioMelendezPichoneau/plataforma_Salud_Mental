@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { Routes } from '@angular/router';
+import { InicioInsideComponent } from '../inicio-inside/inicio-inside.component';
+
+interface SideNavToggle{
+  screenWith: number;
+  collapsed: boolean;
+}
 
 @Component({
   selector: 'app-home-inside',
@@ -7,9 +14,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeInsideComponent implements OnInit {
 
-  constructor() { }
+  isSideNavCollapsed = false;
+  screenWidth = 0;
 
-  ngOnInit(): void {
+onToggleSideNav(data: SideNavToggle): void{
+this.screenWidth = data.screenWith;
+this.isSideNavCollapsed = data.collapsed;
+}
+
+
+
+
+
+ngOnInit(): void {
   }
 
 }

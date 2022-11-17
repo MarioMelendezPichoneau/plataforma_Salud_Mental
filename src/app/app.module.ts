@@ -15,6 +15,14 @@ import { RegistroComponent } from './user/registro/registro.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HomeInsideComponent } from './home-inside/home-inside.component';
 import { ChatComponent } from './chat/chat.component';
+import { InicioInsideComponent } from './inicio-inside/inicio-inside.component';
+import { ProfAreaComponent } from './prof-area/prof-area.component';
+import { ConsultasComponent } from './consultas/consultas.component';
+import { ComunidadComponent } from './comunidad/comunidad.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { AjustesComponent } from './ajustes/ajustes.component';
+import { NotificacionesComponent } from './notificaciones/notificaciones.component';
+import { BodyComponent } from './body/body.component';
 
 const appRoutes: Routes=[
   {path:"",component:HomeComponent},
@@ -23,8 +31,12 @@ const appRoutes: Routes=[
   {path:"Registro",component:RegistroComponent},
   {path: "chat", component: ChatComponent },
   {path:"HomeInside",component:HomeInsideComponent},
-  {path:"sidebar",component:SidebarComponent}
-
+  {path:"Inicio_Inside", component:InicioInsideComponent},
+  {path:"Prof_area", component:ProfAreaComponent},
+  {path:"Consultas", component:ConsultasComponent},
+  {path:"Perfil", component:PerfilComponent},
+  {path:"Ajustes", component:AjustesComponent},
+  {path:"Notificaciones", component:NotificacionesComponent}
 
 ];
 
@@ -38,6 +50,14 @@ const appRoutes: Routes=[
     SidebarComponent,
     HomeInsideComponent,
     ChatComponent,
+    InicioInsideComponent,
+    ProfAreaComponent,
+    ConsultasComponent,
+    ComunidadComponent,
+    PerfilComponent,
+    AjustesComponent,
+    NotificacionesComponent,
+    BodyComponent,
 
   ],
   imports: [
