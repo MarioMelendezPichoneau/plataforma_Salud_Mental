@@ -29,5 +29,11 @@ export const navbarData = [
         routeLink: '/Notificaciones',
         icon: 'fal fa-home',
         label: 'Notificaciones'
+    },
+
+    {
+        routeLink: '',
+        icon: 'fal fa-home',
+        label: 'Salir'
     }
 ];
