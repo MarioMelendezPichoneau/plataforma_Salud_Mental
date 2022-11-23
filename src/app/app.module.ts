@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+// import {MatIconModule} from '@angular/material/icon';
 import {HttpClientModule}from '@angular/common/http'
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
@@ -24,6 +24,7 @@ import { AjustesComponent } from './ajustes/ajustes.component';
 import { NotificacionesComponent } from './notificaciones/notificaciones.component';
 import { BodyComponent } from './body/body.component';
 
+
 const appRoutes: Routes=[
   {path:"",component:HomeComponent},
   {path:"Carrousel",component:CarouselComponent},
@@ -36,7 +37,9 @@ const appRoutes: Routes=[
   {path:"Consultas", component:ConsultasComponent},
   {path:"Perfil", component:PerfilComponent},
   {path:"Ajustes", component:AjustesComponent},
-  {path:"Notificaciones", component:NotificacionesComponent}
+  {path:"Notificaciones", component:NotificacionesComponent},
+  {path:"Comunidad", component:ComunidadComponent}
+
 
 ];
 
@@ -67,7 +70,8 @@ const appRoutes: Routes=[
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
-    FormsModule,
+    FormsModule//,
+  //  MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

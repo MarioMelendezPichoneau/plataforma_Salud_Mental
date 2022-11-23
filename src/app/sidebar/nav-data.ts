@@ -2,38 +2,43 @@ export const navbarData = [
 
     {
         routeLink: '/Inicio_Inside',
-        icon: 'fal fa-home',
+        icon: 'fa fa-home',
         label: 'Inicio'
     },
     {
         routeLink: '/Prof_area',
-        icon: 'fal fa-home',
+        icon: 'fa-solid fa-user-doctor',
         label: 'Profesionales del area'
     },
     {
         routeLink: '/Consultas',
-        icon: 'fal fa-home',
+        icon: 'fa-sharp fa-solid fa-hand-holding-medical',
         label: 'Consultas'
     },
     {
+        routeLink: '/Comunidad',
+        icon: 'fa-solid fa-people-group',
+        label: 'Comunidad'
+    },
+    {
         routeLink: '/Perfil',
-        icon: 'fal fa-home',
+        icon: 'fa-solid fa-user',
         label: 'Perfil'
     },
     {
         routeLink: '/Ajustes',
-        icon: 'fal fa-home',
+        icon: 'fa-solid fa-gears',
         label: 'Ajustes'
     },
     {
         routeLink: '/Notificaciones',
-        icon: 'fal fa-home',
+        icon: 'fa-solid fa-comment',
         label: 'Notificaciones'
     },
 
     {
         routeLink: '',
-        icon: 'fal fa-home',
+        icon: 'fa-solid fa-right-from-bracket',
         label: 'Salir'
     }
 ];
