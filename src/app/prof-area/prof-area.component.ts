@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+
+interface SideNavToggle{
+  screenWith: number;
+  collapsed: boolean;
+}
 @Component({
   selector: 'app-prof-area',
   templateUrl: './prof-area.component.html',
@@ -11,5 +16,14 @@ export class ProfAreaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  isSideNavCollapsed = false;
+  screenWidth = 0;
+
+onToggleSideNav(data: SideNavToggle): void{
+this.screenWidth = data.screenWith;
+this.isSideNavCollapsed = data.collapsed;
+}
+
 
 }

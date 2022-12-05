@@ -12,7 +12,7 @@ interface SideNavToggle{
   templateUrl: './home-inside.component.html',
   styleUrls: ['./home-inside.component.css']
 })
-export class HomeInsideComponent implements OnInit {
+export class HomeInsideComponent  {
 
   isSideNavCollapsed = false;
   screenWidth = 0;
@@ -22,11 +22,5 @@ this.screenWidth = data.screenWith;
 this.isSideNavCollapsed = data.collapsed;
 }
 
-
-
-
-
-ngOnInit(): void {
-  }
 
 }

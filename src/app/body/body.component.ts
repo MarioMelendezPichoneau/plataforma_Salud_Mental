@@ -5,11 +5,11 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.css']
 })
-export class BodyComponent implements OnInit {
+export class BodyComponent{
 
 @Input() collapsed = false;
 @Input() screenWidth = 0;
-
+ 
 getBodyClass(): string{
   let styleClass = '';
   if(this.collapsed && this.screenWidth > 768){
@@ -19,7 +19,6 @@ getBodyClass(): string{
   }
   return styleClass;
 }
-  ngOnInit(): void {
-  }
+ 
 
 }
