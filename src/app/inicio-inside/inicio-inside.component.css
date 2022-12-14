@@ -3,6 +3,16 @@
     font-size:20px;
     text-align: center;
 }
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('src\assets\minds.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
 
 .dashboard-content2 h1{
     padding-top: 10px;
@@ -11,16 +21,97 @@
     color: rgb(55, 55, 157);
 }
 
+.dashboard-content2 p{
+    text-align:justify;
+    justify-content: center;
+ 
+    color: rgb(55, 55, 157);
+}
+.image{
+    padding: 2rem 15px 2rem 25%;
+    
+    /* left: 0; */
+  }
+  
 .dashboard-content2 ul li{
     padding-top: 10px;
     font-size:20px;
     color: #7c7c7c;
+    justify-content: center;
 }
 
 .eventos{
-    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+  /*Tipos de terapia  */
+
+
+.tipos-terapia{
+  padding: 30px;
+  background:#f4f5f7;
+  width: 100vw;
+  height: 130vh;
 }
 
+.tipos-terapia .icon-box {
+  margin-bottom: 20px;
+}
+
+.tipos-terapia .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background: #149ddd;
+  border-radius: 50%;
+  transition: 0.5s;
+  border: 1px solid #149ddd;
+}
+
+.tipos-terapia .icon i {
+  color: #fff;
+  font-size: 24px;
+  line-height: 0;
+}
+
+.tipos-terapia .icon-box:hover .icon {
+  background: #fff;
+}
+
+.tipos-terapia .icon-box:hover .icon i {
+  color: #149ddd;
+}
+
+.tipos-terapia .title {
+  margin-left: 80px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.tipos-terapia.title a {
+  color: #343a40;
+}
+
+.tipos-terapia .title a:hover {
+  color: #149ddd;
+}
+
+.tipos-terapia .description {
+  margin-left: 80px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+
+
+  /* --------- */
 .dashboard-content h1{
     padding-top: 10px;
     margin-left: 40px;
@@ -48,14 +139,7 @@
     align-items: center;
 }
 
-.eventos .row{
-    margin-top: 50px;
-}
 
-
-.eventos .row .col p{
-    text-align: justify;
-}
 h4{
     font-size: 3vmin;
     color: #484872;
@@ -67,6 +151,3 @@ p{
     padding: 0px 40px;
 }
 
-.eventos .ctn{
-    margin-top: 30px;
-}
