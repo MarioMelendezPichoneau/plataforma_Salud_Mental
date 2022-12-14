@@ -6,6 +6,9 @@
       padding: 0;
       box-sizing: border-box;
   }
+/* ----------------- */
+ 
+  /* ----------------- */
   body{
       margin: 0;
   }
@@ -63,10 +66,11 @@
       margin: 80px auto;
   }
   
-  .title{
+  .title h2{
       text-align: center;
-      font-size: 4vmin;
       color: rgb(55, 55, 157);
+      font-weight: bold;
+
   }
   
   .row{
@@ -104,7 +108,6 @@
   .eventos .ctn{
       margin-top: 30px;
   }
-  
   body, html{
       overflow-x: hidden;
   }
@@ -113,114 +116,40 @@
       margin-left: -100px;
   }
   
-  /* preguntas frecuentes */
-  .questions h2{
-    background: #fff;
+  /* ventajas terapia */
+  .terapia-online{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .terapia-online h2{
     text-align: center;
+    color: rgb(55, 55, 157);
     font-weight: bold;
+
   }
-  .accordion .accordion-item{
-    border-bottom: 1px solid #e5e5e5;
-  }
-  
-  .accordion .accordion-item button[aria-expanded='true']{
-    border-bottom: 1px solid #03b5d2;
-  }
-  
-  .accordion button{
-    position: relative;
-    display: block;
-    text-align: left;
-    width: 100%;
-    padding: 1em 0;
-    color: #7288a2;
-    font-size: 1.15rem;
-    font-weight: 400;
-    border: none;
-    background: none;
-    outline: none;
-  
+
+  .terapia-online p{
+    text-align: center;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   
-  .accordion button:hover,
-  .accordion button:focus{
-    cursor: pointer;
-    color: #03b5d2;
+  .card{
+    margin: 50px;
+    width: 500px;
   }
-  
-  
-  .accordion button:hover::after,
-  .accordion button:focus::after{
-    cursor: pointer;
-    color: #03b5d2;
-    border: 1px solid #03b5d2;
+  .card div{
+    margin-bottom: 20px;
   }
-  
-  .accordion button .accordion-title{
-    padding: 1em 1.5em 0;
-  }
-  
-  .accordion button .icon{
-    display: inline-block;
-    position: absolute;
-    top: 18px;
-    right: 0;
-    width: 22px;
-    height: 22px;
-    border: 1px solid;
-    border-radius: 22px;
-  }
-  
-  .accordion button .icon::before{
-    display: block;
-    position: absolute;
-    content: '';
-    top: 9px;
-    left: 5px;
-    width: 10px;
-    height: 2px;
-    background: currentColor;
-  }
-  
-  .accordion button .icon::after{
-    display: block;
-    position: absolute;
-    content: '';
-    top: 5px;
-    left: 9px;
-    width: 2px;
-    height: 10px;
-    background: currentColor;
-  }
-  
-  .accordion button[aria-expanded='true']{
-    color: #03b5d2;
-  }
-  .accordion button[aria-expanded='true'] .icon::after{
-    width: 0;
-  }
-  
-  .accordion button[aria-expanded='true'] + .accordion-content{
-    opacity: 1;
-    max-height: 9em;
-    transition: all 200ms linear;
-    will-change: opacity, max-height;
-  }
-  
-  .accordion .accordion-content{
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 200ms linear, max-height 200ms linear;
-    will-change: opacity, max-height;
-  
-  }
-  
-  .accordion .accordion-content p{
-    font-size: 1em;
-    font-weight: 300;
-    margin: 2em 0;
-  }
+
+
+  /* Equipo */
   
   .team {
       background: #fff;
@@ -232,6 +161,7 @@
     .team h2{
       background: #fff;
       text-align: center;
+      color: rgb(55, 55, 157);
       font-weight: bold;
     }
   
@@ -319,6 +249,7 @@
       transition: left ease-in-out 0.3s;
     }
   
+    /* Footer */
   #footer {
       background: #fff;
       padding: 0 0 30px 0;
@@ -486,7 +417,7 @@
   
     #footer .footer-top .social-links a:hover {
       background:#ea5f99;
-      color: #fff;
+      /* color: #fff; */
       text-decoration: none;
     }
   
