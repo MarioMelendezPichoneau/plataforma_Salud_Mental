@@ -22,7 +22,7 @@ export class ChatComponent implements OnInit {
   constructor() {
 
     this.connection = new HubConnectionBuilder()
-      .withUrl('https://localhost:7048/hubs/chat')
+      .withUrl('https://localhost:7133/hubs/chat')
       .build();
     
     this.connection.on("NewUser", message => this.newUser(message));
@@ -44,6 +44,13 @@ export class ChatComponent implements OnInit {
   }
 
   public join() {
+    this.connection.invoke('JoinGroup', this.groupName, this.userName)
+      .then(_ => {
+        this.joined = true;
+      });
+  }
+
+  public listgroup() {
     this.connection.invoke('JoinGroup', this.groupName, this.userName)
       .then(_ => {
         this.joined = true;

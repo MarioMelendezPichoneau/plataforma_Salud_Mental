@@ -1,6 +1,8 @@
 import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { user} from "../user";
 
 const cors = require('cors')
 
@@ -21,8 +23,6 @@ export class UserServiceService {
   }
 
   private BaseURI = 'https://localhost:7133/api/Usuarios/login';
-  private Base1 = '/Usuarios/login';
-  private Base2 = 'http://localhost:54277/api';
 
   formModel = this.fb.group({
     Email: ['', Validators.email],
@@ -37,8 +37,16 @@ export class UserServiceService {
     Status: [''],
   });
 
-  login(formData: any) {
-    return this.http.post(this.BaseURI, formData);
+  
+
+
+
+  login(formData: any): Observable<any> {
+    return this.http.post<any>(this.BaseURI, formData);
+  }
+
+  login2(user: any) {
+    return this.http.post(this.BaseURI, user);
   }
 
 
@@ -57,9 +65,9 @@ export class UserServiceService {
 
 export interface Data{
 
-  Email: String;
-  Clave: String;
-  ConfirmarClave: String;
+  email: String;
+  clave: String;
+  confirmarClave: String;
   Usuario1: String;
   Telefono: String;
   Rol: String;
