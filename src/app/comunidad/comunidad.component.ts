@@ -22,7 +22,7 @@ export class ComunidadComponent implements OnInit {
   constructor() {
 
     this.connection = new HubConnectionBuilder()
-      .withUrl('https://localhost:7048/hubs/chat')
+      .withUrl('https://localhost:7133/hubs/chat')
       .build();
     
     this.connection.on("NewUser", message => this.newUser(message));

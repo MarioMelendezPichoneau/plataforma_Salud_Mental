@@ -21,11 +21,11 @@
           <h2 class="title">Inicia sesión</h2>
           <div class="input-field">
             <i class="fas fa-envelope"></i>
-            <input type="text" placeholder="Email" [(ngModel)]="formModel.email">
+            <input type="text" placeholder="Email" #Email="ngModel" name="Email" [(ngModel)]="formModel.email">
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Contraseña" [(ngModel)]="formModel.clave">
+            <input type="password" placeholder="Contraseña" #Clave="ngModel" name="Clave "[(ngModel)]="formModel.clave">
           </div>
           <input type="submit" value="Iniciar sesión" class="btn solid" >
 
