@@ -22,17 +22,17 @@
 
           <div class="input-field">
             <i class="fas fa-envelope"></i>
-            <input type="text" placeholder="Email" [(ngModel)]="formModel.email">
+            <input type="text" placeholder="Email" #Email="ngModel" name="Email" [(ngModel)]="formModel.email">
           </div>
 
           <div class="input-field">
             <i class="fa-solid fa-phone"></i>
-            <input type="text" placeholder="Telefono" [(ngModel)]="formModel.telefono">
+            <input type="text" placeholder="Telefono" #Telefono="ngModel" name="Telefono"  [(ngModel)]="formModel.telefono">
           </div>
 
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Contraseña" [(ngModel)]="formModel.clave">
+            <input type="password" placeholder="Contraseña" #Clave="ngModel" name="Clave"  [(ngModel)]="formModel.clave">
           </div>
           <input type="submit" value="Continuar" class="btn solid">
 

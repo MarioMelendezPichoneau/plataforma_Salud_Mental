@@ -17,11 +17,12 @@ export class ComunidadComponent implements OnInit {
   }];
 
   private connection: HubConnection;
+  
 
   constructor() {
 
     this.connection = new HubConnectionBuilder()
-      .withUrl('https://localhost:7048/hubs/chat')
+      .withUrl('https://localhost:7133/hubs/chat')
       .build();
     
     this.connection.on("NewUser", message => this.newUser(message));
@@ -40,6 +41,14 @@ export class ComunidadComponent implements OnInit {
         return console.error(error);
       });
 
+  }
+
+  unirseGrupo(nombregrupo: string){
+    if(!this.groupName){
+      this.connection.invoke("Unirse", this.groupName)
+    }else{
+
+    }
   }
 
   public join() {

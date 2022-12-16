@@ -48,18 +48,78 @@
             </div>
           </div>
         </div>
+  
         
-
+        
+        
         <div *ngIf="joined">
-          <div id="chat">
+          <h3 class="h3 mb-3">{{groupName}}</h3>
+          <!-- <div id="chat">
 
-            <div *ngFor="let message of conversation">  <!--Mensajes que se van enviando  -->
-              <div><strong>{{message.userName}}:</strong> {{message.message}}</div> <!-- Mensaje que se muestra en pantalla -->
+            <div *ngFor="let message of conversation">  
+              <div><strong>{{message.userName}}:</strong> {{message.message}}</div> 
+            </div>
+          </div> -->
+          <!-- <div class="col g-0">
+
+            <div class="chat-message-right mb-4">
+              <div>
+                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+              </div>
+              <div class="flex-shrink-1 bg-light rounded py-2 px-3 mr-3" *ngFor="let message of conversation">
+                <div class="font-weight-bold mb-1">{{message.userName}}</div>
+                {{message.message}}
+              </div>
+            </div>
+
+          </div> -->
+
+          <!-- <div class="inbox_people">
+            <div class="inbox_chat">
+              <div class="chat_list">
+                <div class="chat_people">
+                  <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                  <div class="chat_ib" *ngFor="let message of conversation">
+                    <h5>{{userName}} </h5>
+                    <p>{{messageToSend}}</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div> -->
+
+          <div class="mesgs">
+
+            <div>
+              <div class="msg_history">
+                <div class="outgoing_msg" *ngFor="let message of conversation">
+                  <div class="received_withd_msg">
+                    <p><strong>{{message.userName}}:</strong> {{message.message}}</p>
+                  </div>
+                  <div class="sent_msg">
+                    <p>{{message.message}}</p> 
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+
+
+            <div class="type_msg">
+              <div class="input_msg_write">
+                <input type="text" class="write_msg" placeholder="Type a message" [(ngModel)]="messageToSend" name="messageToSend" />
+                <button class="msg_send_btn" type="button" (click)="sendMessage()" ><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+              </div>
             </div>
           </div>
+
+<!-- 
           <input class="form-control mb-1" type="text" [(ngModel)]="messageToSend" name="messageToSend" />
           <button class="btn btn-primary" (click)="sendMessage()">Send</button>
-          <button class="btn btn-secondary" (click)="leave()">Leave</button>
+          <button class="btn btn-secondary" (click)="leave()">Leave</button> -->
         </div>
       
                       

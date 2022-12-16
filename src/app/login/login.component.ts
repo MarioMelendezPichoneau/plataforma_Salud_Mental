@@ -34,8 +34,8 @@ export class LoginComponent implements OnInit {
 
 
   login() {
-    const user = {email: this.formModel.email, clave: this.formModel.clave};
-    this.http.post("https://localhost:7133/api/Usuarios/login", user).subscribe( (res: any) => {
+    const user = {email: this.formModel.email.valueOf(), clave: this.formModel.clave};
+    this.http.post("https://localhost:7133/api/Usuarios/login", this.formModel).subscribe( (res: any) => {
       localStorage.setItem('token', res.token);
       this.router.navigateByUrl("/Inicio_Inside");
     },
