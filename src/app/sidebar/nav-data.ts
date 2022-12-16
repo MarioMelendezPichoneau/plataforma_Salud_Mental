@@ -25,16 +25,16 @@ export const navbarData = [
         icon: 'fa-solid fa-user',
         label: 'Perfil'
     },
-    {
-        routeLink: '/Ajustes',
-        icon: 'fa-solid fa-gears',
-        label: 'Ajustes'
-    },
-    {
-        routeLink: '/Notificaciones',
-        icon: 'fa-solid fa-comment',
-        label: 'Notificaciones'
-    },
+    // {
+    //     routeLink: '/Ajustes',
+    //     icon: 'fa-solid fa-gears',
+    //     label: 'Ajustes'
+    // },
+    // {
+    //     routeLink: '/Notificaciones',
+    //     icon: 'fa-solid fa-comment',
+    //     label: 'Notificaciones'
+    // },
 
     {
         routeLink: '',

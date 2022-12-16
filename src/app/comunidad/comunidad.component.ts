@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HubConnection, HubConnectionBuilder } from '@microsoft/signalr';
 @Component({
   selector: 'app-comunidad',
   templateUrl: './comunidad.component.html',
@@ -7,17 +7,89 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComunidadComponent implements OnInit {
 
+  public userName = "";
+  public groupName = "";
+  public messageToSend = "";
+  public joined = false;
+  public conversation: NewMessage[] = [{
+    message: 'Bienvenido',
+    userName: 'Sistema'
+  }];
 
-  constructor() { }
+  private connection: HubConnection;
 
-  ngOnInit(): void {
-  
-    var ldk=document.createElement('script');
-    ldk.type='text/javascript'; ldk.async=true; 
-      ldk.src='https://s.cliengo.com/weboptimizer/639610722fbcbd002a55a2a4/639610742fbcbd002a55a2a7.js?platform=view_installation_code_mail_webmaster'; 
-      let s=document.getElementsByTagName('script')[0].parentNode;
-      // s.parentNode.insertBefore(ldk, s);
-  
+  constructor() {
+
+    this.connection = new HubConnectionBuilder()
+      .withUrl('https://localhost:7048/hubs/chat')
+      .build();
+    
+    this.connection.on("NewUser", message => this.newUser(message));
+    this.connection.on("NewMessage", message => this.newMessage(message));
+    this.connection.on("LeftUser", message => this.leftUser(message));
+
   }
 
+
+
+  ngOnInit(): void {
+    this.connection.start()
+      .then(_ => {
+        console.log('Connection Started');
+      }).catch(error => {
+        return console.error(error);
+      });
+
+  }
+
+  public join() {
+    this.connection.invoke('JoinGroup', this.groupName, this.userName)
+      .then(_ => {
+        this.joined = true;
+      });
+  }
+
+  public sendMessage() {
+    const newMessage: NewMessage = {
+      message: this.messageToSend,
+      userName: this.userName,
+      groupName: this.groupName
+    };
+
+    this.connection.invoke('SendMessage', newMessage)
+      .then(_ => this.messageToSend = '');
+  }
+
+  public leave() {
+    this.connection.invoke('LeaveGroup', this.groupName, this.userName)
+      .then(_ => this.joined = false);
+  }
+
+  private newUser(message: string) {
+    console.log(message);
+    this.conversation.push({
+      userName: 'Sistema',
+      message: message
+    });
+  }
+
+  private newMessage(message: NewMessage) {
+    console.log(message);
+    this.conversation.push(message);
+  }
+
+  private leftUser(message: string) {
+    console.log(message);
+    this.conversation.push({
+      userName: 'Sistema',
+      message: message
+    });
+  }
+
+}
+
+interface NewMessage {
+  userName: string;
+  message: string;
+  groupName?: string;
 }

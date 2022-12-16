@@ -67,9 +67,9 @@ header{
 .tipos-terapia p{
   margin-bottom: 2%;
   margin-top: 30px;
-  align-items:center;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  text-align: justify;
 }
 
 
@@ -82,6 +82,7 @@ header{
 
 }
 
+/* Info salud mental */
 .salud-mental{
   padding-left: 100px;
   
@@ -93,13 +94,8 @@ header{
   display: flex;
 }
 
-.salud-mental .row{
-  /* margin: 0 auto; */
-  /* padding-left: 20px; */
-}
+
 .salud-mental img{
-  /* align-items: center; */
-  /* font-weight: bold; */
   justify-content: center;
   display: flex;
   margin-left: 300px;
@@ -109,145 +105,9 @@ header{
   margin-left: 100px;
   width: 500px;
   height: 250px;
-  /* font-weight: 500; */
   display: flex;
   justify-content: center;
   text-align: justify;
   border-color: #149ddd;
   margin-bottom: 5px;
 }
-/*
-.dashboard-content p{
-  padding-top: 10px;
-  padding: 25px 50px 75px;
-  font-size:20px;
-  text-align: center;
-}
-
-.dashboard-content2 p{
-    text-align:justify;
-    justify-content: center;
-    color: rgb(55, 55, 157);
-} */
-  /*Tipos de terapia  */
-
-/* 
-.tipos-terapia{
-  padding: 30px;
-  background:#f4f5f7;
-  width: 100vw;
-  height: 150vh;
-}
-
- .tipos-terapia .row .icon-box {
-  margin-bottom: 10px;
-} */
-/*
-.tipos-terapia .icon {
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: #149ddd;
-  border-radius: 50%;
-  transition: 0.5s;
-  border: 1px solid #149ddd;
-}
-
-.tipos-terapia .icon i {
-  color: #fff;
-  font-size: 24px;
-  line-height: 0;
-}
-
-.tipos-terapia .icon-box:hover .icon {
-  background: #fff;
-}
-
-.tipos-terapia .icon-box:hover .icon i {
-  color: #149ddd;
-}
- */
-/* .tipos-terapia .title {
-  margin-left: 80px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.tipos-terapia.title a {
-  color: #343a40;
-}
-
-.tipos-terapia .title a:hover {
-  color: #149ddd;
-}
-
-.tipos-terapia .description {
-  margin-left: 80px;
-  line-height: 24px;
-  font-size: 14px;
-} */
-
-
-
-  /* ---------
-.dashboard-content h2{
-    padding-top: 10px;
-    margin-left: 40px;
-    text-align: center;
-
-}
-
-.title{
-    padding-top: 50px;
-    text-align: center;
-    font-size: 4vmin;
-    color: rgb(55, 55, 157);
-}
-
-.row{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.row .col{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-h4{
-    font-size: 3vmin;
-    color: #484872;
-    margin: 20px auto;
-}
-
-p{
-    color: #7c7c7c;
-    padding: 0px 40px;
-}
- */
-
- /* .salud-mental h2{
-
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-
- } */
-
- /* .salud-mental {
-
-  align-items: center;
-  justify-content: center;
-
- } */
- /* .col-md-8 .offset-md-2 h2{
-
- } */
