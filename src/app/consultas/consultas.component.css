@@ -1,0 +1,20 @@
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('src\assets\consulta-mindsecure.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+
+.consultas-mindsecure  h2{
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+}
+
