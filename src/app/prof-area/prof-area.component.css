@@ -1,6 +1,56 @@
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('src\assets\mindsecure-especialistas.png');
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
 .prof-mindsecure h2{
     align-items: center;
     font-weight: bold;
     justify-content: center;
     display: flex;
+}
+
+.prof-mindsecure img{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    border-radius: 5%;
+    /* float: left; */
+
+}
+
+.prof-mindsecure .card{
+    margin-top: 20px;
+    margin-left: 100px;
+    width: 600px;
+    height: 480px;
+    text-align: justify;
+    border-color: #149ddd;
+    margin-bottom: 5px;
+    justify-content: center;
+    display: flex;
+  
+}
+
+.prof-mindsecure .card .btn {
+  font-size: 15px;
+  width: 100px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #5995fd;
+  color: #fff;
+  font-weight: 600;
+  transition: .5s;
 }
