@@ -1,30 +1,34 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="login.component.css"> -->
-  </head>
+</head>
+
 <body>
   <div class="container">
     <div class="forms-container">
       <div class="signin">
-        <form action="" class="sign-in-form">
+        <form action="" class="sign-in-form" method="post" (submit)="login()">
           <h2 class="title">Inicia sesión</h2>
           <div class="input-field">
             <i class="fas fa-envelope"></i>
-            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Email" [(ngModel)]="formModel.email">
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Contraseña">
+            <input type="password" placeholder="Contraseña" [(ngModel)]="formModel.clave">
           </div>
-          <input type="submit" value="Iniciar sesión" class="btn solid">
-          
+          <input type="submit" value="Iniciar sesión" class="btn solid" >
+
           <p class="social-text">O inicia sesión con redes sociales</p>
           <div class="social-media">
             <a href="#" class="social-icon">
@@ -43,22 +47,23 @@
         </form>
       </div>
 
-
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
             <h3>¿Nuevo aquí? </h3>
-           <p>
-            Regístrate y vive la experiencia con nosotros, permite que te conozcamos y
-            trabajemos juntos en crear una mejor versión de ti para sacar todo tu potencial.
-           </p>
-           <button class="btn transparent" id="sign-up-btn" ><a href="Registro">Registrate</a></button>
-        </div>
-        <img src="\assets\signup.png" class="image" alt="" width="300px" height="300px">
+
+            <p>
+              Regístrate y vive la experiencia con nosotros, permite que te conozcamos y
+              trabajemos juntos en crear una mejor versión de ti para sacar todo tu potencial.
+            </p>
+            <button class="btn transparent" id="sign-up-btn"><a href="Registro">Registrate</a></button>
+          </div>
+          <img src="\assets\signup.png" class="image" alt="" width="300px" height="300px">
         </div>
       </div>
 
     </div>
   </div>
 </body>
+
 </html>
