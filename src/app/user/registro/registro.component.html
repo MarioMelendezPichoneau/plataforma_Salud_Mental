@@ -13,23 +13,23 @@
   <div class="container">
     <div class="forms-container">
       <div class="signup">
-        <form action="" class="sign-up-form">
+        <form action="" class="sign-up-form" method="post" (submit)="registro()">
           <h2 class="title">Regístrate</h2>
           <div class="input-field">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Nombre de usuario">
-          </div>
-          <div class="input-field">
             <i class="fas fa-envelope"></i>
-            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Email" [(ngModel)]="formModel.email">
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Contraseña">
+            <input type="password" placeholder="Contraseña" [(ngModel)]="formModel.clave">
+          </div>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Nombre de usuario" [(ngModel)]="formModel.usuario1">
           </div>
           <div class="input-field">
             <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Confirmar contraseña">
+            <input type="text" placeholder="Telefono" [(ngModel)]="formModel.telefono">
           </div>
           <input type="submit" value="Continuar" class="btn solid">
           
