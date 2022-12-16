@@ -17,6 +17,7 @@ export class ComunidadComponent implements OnInit {
   }];
 
   private connection: HubConnection;
+  
 
   constructor() {
 
@@ -40,6 +41,14 @@ export class ComunidadComponent implements OnInit {
         return console.error(error);
       });
 
+  }
+
+  unirseGrupo(nombregrupo: string){
+    if(!this.groupName){
+      this.connection.invoke("Unirse", this.groupName)
+    }else{
+
+    }
   }
 
   public join() {
