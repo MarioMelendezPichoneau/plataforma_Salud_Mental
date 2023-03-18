@@ -5,24 +5,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { CarouselModule } from './carousel/carousel.module';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { RegistroComponent } from './user/registro/registro.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { HomeInsideComponent } from './home-inside/home-inside.component';
-import { ChatComponent } from './chat/chat.component';
-import { InicioInsideComponent } from './inicio-inside/inicio-inside.component';
-import { ProfAreaComponent } from './prof-area/prof-area.component';
-import { ConsultasComponent } from './consultas/consultas.component';
-import { ComunidadComponent } from './comunidad/comunidad.component';
-import { PerfilComponent } from './perfil/perfil.component';
-import { AjustesComponent } from './ajustes/ajustes.component';
-import { NotificacionesComponent } from './notificaciones/notificaciones.component';
-import { BodyComponent } from './body/body.component';
+import { AppComponent } from './components/app/app.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { CarouselModule } from './components/carousel/carousel.module';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { RegistroComponent } from './components/user/registro/registro.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HomeInsideComponent } from './components/home-inside/home-inside.component';
+import { ChatComponent } from './components/chat/chat.component';
+import { InicioInsideComponent } from './components/inicio-inside/inicio-inside.component';
+import { ProfAreaComponent } from './components/prof-area/prof-area.component';
+import { ConsultasComponent } from './components/consultas/consultas.component';
+import { ComunidadComponent } from './components/comunidad/comunidad.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { AjustesComponent } from './components/ajustes/ajustes.component';
+import { NotificacionesComponent } from './components/notificaciones/notificaciones.component';
+import { BodyComponent } from './components/body/body.component';
+import { OpcionRolComponent } from './components/opcion-rol/opcion-rol.component';
+import { RegistroProfComponent } from './components/user/registro-prof/registro-prof.component';
 
 
 const appRoutes: Routes=[
@@ -61,6 +63,8 @@ const appRoutes: Routes=[
     AjustesComponent,
     NotificacionesComponent,
     BodyComponent,
+    OpcionRolComponent,
+    RegistroProfComponent,
 
   ],
   imports: [
