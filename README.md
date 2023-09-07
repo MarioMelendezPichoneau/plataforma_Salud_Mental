@@ -1,6 +1,6 @@
-# Carousel
+# Plaraforma para la salud Mental 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5. now is updated to version 16.2.1
 
 ## Development server
 
@@ -25,3 +25,16 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Images
+- ![image](https://github.com/MarioMelendezPichoneau/plataforma_Salud_Mental/assets/71912620/4df3a184-1e25-42bc-bd9d-d4d7512f51ba)
+- ![image](https://github.com/MarioMelendezPichoneau/plataforma_Salud_Mental/assets/71912620/10178e54-c692-4977-8b3b-14bce796c5b0)
+- ![image](https://github.com/MarioMelendezPichoneau/plataforma_Salud_Mental/assets/71912620/7209f060-eee9-4c8f-b3dd-a03861e18e92)
+- ![image](https://github.com/MarioMelendezPichoneau/plataforma_Salud_Mental/assets/71912620/1b759275-ed41-4d01-ae94-33dcc06eb2ae)
+- ![image](https://github.com/MarioMelendezPichoneau/plataforma_Salud_Mental/assets/71912620/204959ce-f6a0-4cf5-91dc-8be555a8e0de)
+
+
+
+
+
+
